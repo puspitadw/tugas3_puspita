@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E7EB;
+}
+
+header {
+    width: 100%;
+    background-color: #5A639C;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.banner{
+    text-align: center;
+}
+.banner img {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 5em;
+    margin-top: 2em;
+}
+
+#container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.movie-wrapper{
+    overflow-x: auto; 
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 80px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.movie-card {
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.cs p {
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.movie-details {
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.movie-details h2 {
+    margin-top: 0;
+}
+
+.movie-details p {
+    margin: 20px 0;
+}
+
+.movie-details button{
+    background-color: #ff4500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.movie-details button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.close {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    padding: 1px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .movie-details {
+    display: block;
+}
+
+.testimonials{
+    padding: 1em 1em;
+    margin-bottom: 2em;
+    background-color: #9396ab;
+}
+
+blockquote {
+    background-color: #fff;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
